@@ -17,15 +17,16 @@
   font-family: "Source Sans Pro";
   font-weight: bold;
 }
-body {
+.container{
   width: 100vw;
   height: 100vh;
   background: #db4437;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
-.container {
+.main-box {
   width: 430px;
   height: 530px;
   background: #f1f1f1;
@@ -33,7 +34,7 @@ body {
   padding: 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.container h2 {
+.main-box h2 {
   text-align: center;
   margin-bottom: 50px;
   font-size: 30px;
@@ -91,21 +92,22 @@ form button {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.container form button:hover {
+form button:hover {
   background: #0073ff;
 }
-.container .or {
+.or {
   text-align: center;
   margin-top: 20px;
   text-transform: capitalize;
   color: #3d3d3d;
 }
-.container .btn-box {
+.btn-box {
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
-.container .btn-box button {
+.btn-box button {
   width: 140px;
   height: 35px;
   margin: 5px;
@@ -119,34 +121,34 @@ form button {
   transition: all 0.5s ease;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.container .btn-box button i {
+.main-box .btn-box button i {
   font-size: 20px;
   vertical-align: middle;
   margin-right: 5px;
 }
-.container .btn-box .facebook {
+.btn-box .facebook {
   color: #1877f2;
 }
-.container .btn-box .google {
+.btn-box .google {
   color: #db4437;
 }
-.container .btn-box .facebook:hover {
+.btn-box .facebook:hover {
   color: #ffffff;
   background: #1877f2;
   border: none;
 }
-.container .btn-box .google:hover {
+.btn-box .google:hover {
   color: #ffffff;
   background: #db4437;
   border: none;
 }
 
-.container .remember {
+.main-box .remember {
   text-align: center;
   margin-top: 40px;
   color: #3d3d3d;
 }
-.container .remember a {
+.main-box .remember a {
   text-decoration: none;
   color: #009aff;
 }
